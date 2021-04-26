@@ -31,9 +31,9 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static Logger logger;
 	
-//	@Parameters("browser")
+	@Parameters("browser")
 	@BeforeClass
-	public void setup()
+	public void setup(String br)
 	{
 		
 		System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
@@ -45,9 +45,9 @@ public class BaseClass {
 		
 		
 		logger = Logger.getLogger("Parabanking");
-//		PropertyConfigurator.configure("Log4j.properties");
+		PropertyConfigurator.configure("Log4j.properties");
 		
-/*		if(br.equals("chrome"))
+		if(br.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
 			driver=new ChromeDriver();
@@ -67,7 +67,7 @@ public class BaseClass {
 			System.setProperty("webdriver.opera.driver",readconfig.getOperaPath());
 			driver = new OperaDriver();
 		}
-		*/	
+			
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(baseURL);

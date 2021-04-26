@@ -1,0 +1,4 @@
+com\paraBank\testCases\TC_LoginTest_001.class
+com\paraBank\testCases\BaseClass.class
+com\paraBank\pageObjects\LoginPage.class
+com\paraBank\utilities\ReadConfig.class
