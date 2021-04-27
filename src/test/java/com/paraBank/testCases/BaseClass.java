@@ -21,7 +21,7 @@ import org.testng.annotations.Parameters;
 
 import com.paraBank.utilities.ReadConfig;
 
-public class BaseClass {
+public class BaseClass  {
 	
 	ReadConfig readconfig  = new ReadConfig();
 	
