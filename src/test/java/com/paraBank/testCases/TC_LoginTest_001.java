@@ -28,6 +28,7 @@ public class TC_LoginTest_001  extends BaseClass{
 		logger.info("Entered password");
 		
 		lp.clickSubmit();
+		logger.info("Loged In");
 		Thread.sleep(4000);
 		
 		
